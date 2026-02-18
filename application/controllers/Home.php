@@ -6,8 +6,9 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    exit(0); // Handle preflight request
+    exit(0);
 }
+
 
 class Home extends CI_Controller 
 {
